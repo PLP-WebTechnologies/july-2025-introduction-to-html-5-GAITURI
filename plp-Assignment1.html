@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A simple HTML5 page created by me to learn accessibility and SEO basics." />
+  <meta name="keywords" content="HTML5, beginner, developer, learning, accessibility, SEO" />
+  <meta name="author" content="Your Name" />
+  <title>My First Semantic Web Page</title>
+</head>
+
+<body>
+  <!-- Site Header -->
+  <header>
+    <h1>Welcome to My Web Page</h1>
+    <p>This page is built using HTML5 to practice clean code, accessibility, and SEO basics.</p>
+  </header>
+
+  <!-- Navigation Menu -->
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#about" title="Go to About section">About Me</a></li>
+      <li><a href="#projects" title="See my projects">Projects</a></li>
+      <li><a href="#blog" title="Read my blog posts">Blog</a></li>
+      <li><a href="#contact" title="Contact me">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p>Hi! I'm a beginner web developer learning how to use HTML5 properly. This page helps me practice semantic structure and make my content easy to read for everyone, including search engines and screen readers.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">My Projects</h2>
+      <ul>
+        <li>Simple Portfolio Page</li>
+        <li>Basic Python</li>
+        <li>Learning Website</li>
+      </ul>
+    </section>
+
+    <!-- Blog Section -->
+    <article id="blog" aria-labelledby="blog-heading">
+      <h2 id="blog-heading">My Blog</h2>
+
+      <section aria-labelledby="post1-heading">
+        <h3 id="post1-heading">What is Semantic HTML?</h3>
+        <p>Semantic HTML means using tags that describe the meaning of the content, like <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code>. It helps screen readers and improves SEO.</p>
+      </section>
+
+      <section aria-labelledby="post2-heading">
+        <h3 id="post2-heading">Why Accessibility Matters</h3>
+        <p>Accessibility makes sure all users, including those with disabilities, can use the website.</p>
+      </section>
+    </article>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <p>You can reach me by email at <a href="gaiturimark@gmail.com">Email</a>.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Beginner Dev. Built with HTML5.</p>
+    <p><a href="#top" title="Back to to
