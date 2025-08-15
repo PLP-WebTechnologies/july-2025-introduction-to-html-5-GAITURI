@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Information & Registration Form</title>
+    <link rel="stylesheet" href="styles.css"
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Horizon High School</h1>
+        <p>Your journey to academic excellence starts here!</p>
+    </header>
+
+    <section id="about">
+        <h2>About Our School</h2>
+        <p>Horizon High School is committed to providing a holistic educational experience. We believe in fostering a community where students can thrive academically, creatively, and socially.</p>
+        
+        <h3>Our Core Values</h3>
+        <ul>
+            <li>Excellence in Academics</li>
+            <li>Inclusivity and Respect</li>
+            <li>Innovation in Learning</li>
+            <li>Community Engagement</li>
+        </ul>
+        
+        <h3>Subject Offerings (2024-2025)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject Area</th>
+                    <th>Required Courses</th>
+                    <th>Electives</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Science</td>
+                    <td>Physics, Chemistry, Biology</td>
+                    <td>Astronomy, Environmental Science</td>
+                </tr>
+                <tr>
+                    <td>Arts</td>
+                    <td>Art & Design, Music Theory</td>
+                    <td>Drama, Photography</td>
+                </tr>
+                <tr>
+                    <td>Humanities</td>
+                    <td>History, Geography</td>
+                    <td>Sociology, Psychology</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="media">
+        <h2>A Glimpse of Our Campus</h2>
+        <p>Listen to our school anthem and watch a short tour of our facilities.</p>
+        
+        <h3>School Anthem</h3>
+        <audio controls src="audio/school_anthem.mp3">
+            <source src="audio/school_anthem.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <h3>Campus Tour Video</h3>
+        <video width="100%" controls>
+            <source src="video/campus_tour.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="registration">
+        <h2>Student Registration Form</h2>
+        <form action="/submit-registration" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="John Doe" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+                <label for="grade">Grade Level:</label>
+                <select id="grade" name="grade" required>
+                    <option value="" disabled selected>Select a grade</option>
+                    <option value="9">Grade 9</option>
+                    <option value="10">Grade 10</option>
+                    <option value="11">Grade 11</option>
+                    <option value="12">Grade 12</option>
+                </select>
+
+                <label for="previous-school">Previous School Name:</label>
+                <input type="text" id="previous-school" name="previous-school" autocomplete="organization" required>
+                
+                <label for="biography">Tell us a bit about yourself:</label>
+                <textarea id="biography" name="biography" rows="5" minlength="50" placeholder="e.g., Your hobbies, interests, and academic goals." required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Create a Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username (6-12 characters)" minlength="6" maxlength="12" required>
+                
+                <label for="password">Create a Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password (at least 8 characters)" minlength="8" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" readonly value="This field is for confirmation only">
+            </fieldset>
+
+            <input type="submit" value="Submit Registration">
+        </form>
+    </section>
+
+</body>
+</html>
